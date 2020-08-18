@@ -1,4 +1,4 @@
-package web_study_02;
+package web_study_02.unit02;
 
 import java.io.IOException;
 import javax.servlet.ServletConfig;
