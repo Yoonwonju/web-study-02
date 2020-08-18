@@ -7,7 +7,7 @@
 <title>Servlet - doGet & doPost</title>
 </head>
 <body>
-	<form method="get" action="MethodSevlet">
+	<form method="get" action="MethodServlet">
 		<input type="submit" value="get 방식으로 호출하기">
 	</form>
 	<br><br>

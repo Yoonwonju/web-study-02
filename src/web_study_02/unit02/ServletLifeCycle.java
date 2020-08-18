@@ -12,30 +12,29 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class ServeletLifeCycle
  */
 @WebServlet("/LifeCycle")
-public class ServeletLifeCycle extends HttpServlet {
+public class ServletLifeCycle extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public ServeletLifeCycle() {
-    	super();
-    	System.out.println("ServeletLifeCycle()");
+    public ServletLifeCycle() {
+        System.out.println("ServletLifeCycle()");
     }
 
 	public void init(ServletConfig config) throws ServletException {
-		System.out.println("init()");
+	    System.out.println("init()");
 	}
 
 	public void destroy() {
-		System.out.println("destroy()");
+	    System.out.println("destroy()");
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("doGet()");
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
+	    System.out.println("doGet()");
+        response.getWriter().append("Served at: ").append("gitHub edit").append(request.getContextPath());
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("doPost()");
-//		doGet(request, response);
+	    System.out.println("doPost()");
+		doGet(request, response);
 	}
 
 }
