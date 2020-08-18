@@ -36,6 +36,7 @@ public class CheckboxServlet extends HttpServlet {
 		
 			
 		request.setAttribute("arrToltems", arrToltems);
+		response.setContentType("text/html; charset=UTF-8");
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("08_result.jsp");
 		dispatcher.forward(request, response);
